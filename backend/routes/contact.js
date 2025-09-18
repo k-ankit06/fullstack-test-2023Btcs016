@@ -46,7 +46,7 @@ router.post("/contact", async (req, res) => {
     res.status(500).json({
       success: false,
       message: "Something went wrong. Please try again later.",
-      error: error && error.message, // Optionally send error message to frontend for debugging
+      error: error && error.message, 
     })
   }
 })
